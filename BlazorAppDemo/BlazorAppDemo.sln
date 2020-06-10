@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Models", "EmployeeManagement.Models\EmployeeManagement.Models.csproj", "{5812D0FF-B09D-4B7A-A6BF-C0AA17A02859}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpoyeeManagement.Web", "EmpoyeeManagement.Web\EmpoyeeManagement.Web.csproj", "{648674A8-EA44-4876-B8CC-A6718AEE62D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpoyeeManagement.Web", "EmpoyeeManagement.Web\EmpoyeeManagement.Web.csproj", "{648674A8-EA44-4876-B8CC-A6718AEE62D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
