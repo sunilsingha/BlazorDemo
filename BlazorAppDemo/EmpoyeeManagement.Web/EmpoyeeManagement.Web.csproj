@@ -8,4 +8,15 @@
     <ProjectReference Include="..\EmployeeManagement.Models\EmployeeManagement.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\deepu.PNG" />
+    <None Include="wwwroot\images\don.PNG" />
+    <None Include="wwwroot\images\isu.PNG" />
+    <None Include="wwwroot\images\john.PNG" />
+  </ItemGroup>
+
 </Project>
