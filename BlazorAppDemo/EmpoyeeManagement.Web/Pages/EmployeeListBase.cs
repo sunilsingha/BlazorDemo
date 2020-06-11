@@ -11,23 +11,26 @@ namespace EmpoyeeManagement.Web.Pages
     {
         public IEnumerable<Employee> Employees { get; set; }
 
-        protected override Task OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
-            LoadEmployees();
-            return base.OnInitializedAsync();
+            await Task.Run(LoadEmployees);
+            //return base.OnInitializedAsync();
         }
 
         private void LoadEmployees()
         {
+
+            System.Threading.Thread.Sleep(3000);
+
             Employee e1 = new Employee()
             {
                 EmployeeId = 1,
                 FirstName = "John",
                 LastName = "Hastings",
                 Email = "john@blazor.com",
-                Department = new Department() { DepartmentId = 1, DepartmentName = "HR"},
+                Department = new Department() { DepartmentId = 1, DepartmentName = "HR" },
                 Gender = Gender.Male,
-                DateOfBirth = new DateTime(1980,12,14),
+                DateOfBirth = new DateTime(1980, 12, 14),
                 PhotoPath = "images/john.png"
             };
 
