@@ -19,7 +19,9 @@ namespace EmpoyeeManagement.Web.Pages
 
         private void LoadEmployees()
         {
+
             System.Threading.Thread.Sleep(3000);
+
             Employee e1 = new Employee()
             {
                 EmployeeId = 1,
@@ -28,7 +30,7 @@ namespace EmpoyeeManagement.Web.Pages
                 Email = "john@blazor.com",
                 DepartmentId = 1,
                 Gender = Gender.Male,
-                DateOfBirth = new DateTime(1980,12,14),
+                DateOfBirth = new DateTime(1980, 12, 14),
                 PhotoPath = "images/john.png"
             };
 
