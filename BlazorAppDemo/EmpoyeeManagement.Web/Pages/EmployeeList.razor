@@ -3,6 +3,12 @@
 
 <h3>Employee List</h3>
 
+@if (Employees == null)
+{
+    <div class="Spinner"/>
+}
+else
+{ 
 <div class="card-deck">
     @foreach (var employee in Employees)
     {
@@ -19,3 +25,4 @@
         </div>
     }
 </div>
+}

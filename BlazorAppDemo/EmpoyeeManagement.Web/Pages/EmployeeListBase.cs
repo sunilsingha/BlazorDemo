@@ -11,21 +11,22 @@ namespace EmpoyeeManagement.Web.Pages
     {
         public IEnumerable<Employee> Employees { get; set; }
 
-        protected override Task OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
-            LoadEmployees();
-            return base.OnInitializedAsync();
+            await Task.Run(LoadEmployees);
+            //return base.OnInitializedAsync();
         }
 
         private void LoadEmployees()
         {
+            System.Threading.Thread.Sleep(3000);
             Employee e1 = new Employee()
             {
                 EmployeeId = 1,
                 FirstName = "John",
                 LastName = "Hastings",
                 Email = "john@blazor.com",
-                Department = new Department() { DepartmentId = 1, DepartmentName = "HR"},
+                DepartmentId = 1,
                 Gender = Gender.Male,
                 DateOfBirth = new DateTime(1980,12,14),
                 PhotoPath = "images/john.png"
@@ -37,7 +38,7 @@ namespace EmpoyeeManagement.Web.Pages
                 FirstName = "Don",
                 LastName = "Bosco",
                 Email = "don@blazor.com",
-                Department = new Department() { DepartmentId = 1, DepartmentName = "DM" },
+                DepartmentId =  1,
                 Gender = Gender.Male,
                 DateOfBirth = new DateTime(1980, 1, 10),
                 PhotoPath = "images/don.png"
@@ -49,7 +50,7 @@ namespace EmpoyeeManagement.Web.Pages
                 FirstName = "Ishu",
                 LastName = "Singh",
                 Email = "isu@blazor.com",
-                Department = new Department() { DepartmentId = 1, DepartmentName = "MD" },
+                DepartmentId = 1,
                 Gender = Gender.Female,
                 DateOfBirth = new DateTime(2017, 11, 06),
                 PhotoPath = "images/isu.png"
@@ -61,7 +62,7 @@ namespace EmpoyeeManagement.Web.Pages
                 FirstName = "Deepesh",
                 LastName = "Singh",
                 Email = "deepu@blazor.com",
-                Department = new Department() { DepartmentId = 1, DepartmentName = "MD" },
+                DepartmentId =  1,
                 Gender = Gender.Male,
                 DateOfBirth = new DateTime(2014, 02, 14),
                 PhotoPath = "images/deepu.png"
